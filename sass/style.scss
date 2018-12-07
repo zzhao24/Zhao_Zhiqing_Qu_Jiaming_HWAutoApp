@@ -1,0 +1,290 @@
+@import "variables";
+@import "mixins";
+
+@import "../node_modules/foundation-sites/assets/foundation";
+
+// ======== Global Settings  ========
+
+body{
+  min-width: 320px;
+  font-family: $body-font-family;
+  font-size: 1rem;
+}
+
+#page{
+  width: 100%;
+  overflow: hidden;
+}
+
+.w-100{
+  width: 100%;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  letter-spacing: 5px;
+}
+
+// ======== Site Header ========
+#site-header{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  #main-logo{
+    width: auto;
+    height: 100%;
+    max-height: 110px;
+  }
+}
+
+
+
+// ======== Video Section ========
+#video-section{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+  opacity: 1;
+
+  #car-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: .75;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    min-width: 280px;
+    text-align: center;
+    color: $white;
+
+    img{
+      width: 280px;
+    }
+
+    h2{
+      font-size: 2em;
+      @include breakpoint(medium){
+        font-size: 4em;
+      }
+      @include breakpoint(large){
+        font-size: 5em;
+      }
+    }
+
+    a{
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+
+
+  &.hidden{
+    -webkit-animation-name: fadeOut;
+    -moz-animation-name: fadeOut;
+    -o-animation-name: fadeOut;
+    animation-name: fadeOut;
+    -webkit-animation-duration: .3s;
+    -moz-animation-duration: .3s;
+    -o-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+  99% {
+    opacity: 0;
+    left: 0;
+  }
+  100%{
+    opacity: 0;
+    left: -99999px;
+  }
+}
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+  99% {
+    opacity: 0;
+    left: 0;
+  }
+  100%{
+    opacity: 0;
+    left: -99999px;
+  }
+}
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+  99% {
+    opacity: 0;
+    left: 0;
+  }
+  100%{
+    opacity: 0;
+    left: -99999px;
+  }
+}
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+  99% {
+    opacity: 0;
+    left: 0;
+  }
+  100%{
+    opacity: 0;
+    left: -99999px;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+  99% {
+    opacity: 0;
+    left: 0;
+  }
+  100%{
+    opacity: 0;
+    left: -99999px;
+  }
+}
+
+
+// ======== Banner Section ========
+
+#banner-section{
+  background-image: url('../images/Maserati-MY18-MY19-GranTurismo-171010M.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: $white;
+  .grid-container{
+    display: flex;
+    align-items: flex-end;
+    height: auto;
+    min-height: calc(100vh - 140px);
+    .content{
+      padding-bottom: 45px;
+      padding-top: 120px;
+      width: 100%;
+      @include breakpoint(large){
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+      }
+    }
+  }
+}
+
+// ======== Features Section ========
+#features-section{
+  padding-top: 90px;
+  padding-bottom: 90px;
+  .introduction{
+    margin-bottom: 45px;
+  }
+  .options{
+    ul.option-tabs{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border: 1px solid #e6e6e6;
+      li{
+        background-color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.125em;
+        padding: .75rem 1rem;
+        border-bottom: 1px solid #e6e6e6;
+        -webkit-transition: background-color .3s ease;
+        -moz-transition: background-color .3s ease;
+        -ms-transition: background-color .3s ease;
+        -o-transition: background-color .3s ease;
+        transition: background-color .3s ease;
+        &:last-child{
+          border-bottom: none;
+        }
+        
+        &:hover{
+          background-color: #e6e6e6;
+        }
+      }
+    }
+  }
+  .tab-content{
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    padding: 1rem;
+    @include breakpoint(large){
+      padding: 0;
+      border: none;
+    }
+  }
+}
+
+// ======== Years Section ========
+
+#years-section{
+  margin-bottom: 90px;
+}
+
+// ======== Site Footer ========
+
+#site-footer{
+  border-top: 1px solid $black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .footer-logo{
+    margin-bottom: 30px;
+    img{
+      width: auto;
+      height: 100%;
+      max-height: 110px;
+    }
+  }
+  .copyright{
+    font-size: .875em;
+  }
+}

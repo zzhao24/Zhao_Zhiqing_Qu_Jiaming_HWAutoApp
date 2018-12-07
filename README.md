@@ -4,7 +4,7 @@ This is an application about maserati.
 ## Design&model
 * designer: Jiaming Qu
 * designed with
- *Adobe photoshop
+ * Adobe photoshop
  * aodobe illustrator
  * xd
  * cinema 4D

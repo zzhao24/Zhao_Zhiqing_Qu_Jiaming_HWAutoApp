@@ -1,7 +1,7 @@
 # Zhao_Zhiqing_Qu_Jiaming_HWAutoApp
 ## Auto App 
 This is an application about maserati.
-## Design&model
+## Designer&model
 * designer: Jiaming Qu
 * designed with
   * Adobe photoshop

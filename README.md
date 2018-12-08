@@ -21,3 +21,6 @@ This is an application about maserati.
 * Add more interactive moduals for car model.
 * Deisgn a more friendly interface for model display.
 * Overhaul the UX design.
+
+## License
+* fanshawe.copyright

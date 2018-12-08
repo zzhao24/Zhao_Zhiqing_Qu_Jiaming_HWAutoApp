@@ -2,14 +2,14 @@
 ## Auto App 
 This is an application about maserati.
 ## Designer & Model
-* designer: Jiaming Qu
+* designer: **Jiaming Qu**
 * designed with
   * AfterEffects
   * Illustrator
   * Adobe XD
   * Cinema4D
 ## Back-end developer
-* developer: Zhiqing Zhao     
+* developer: **Zhiqing Zhao**     
 * build with
   * foundation 6
   * gulp

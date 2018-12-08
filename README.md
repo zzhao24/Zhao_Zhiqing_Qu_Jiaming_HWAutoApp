@@ -17,7 +17,7 @@ This is an application about maserati.
   * javascript
 
 ## On going development Roadmap
-* Add 3D tour section to let user interact with the car in real time.
-* Add more interact moduals for car model.
+* Add 3D Tour section to let users interact with the model in real time.
+* Add more interactive moduals for car model.
 * Deisgn a more friendly interface for model display.
-* Overhaul the full UX design.
+* Overhaul the UX design.

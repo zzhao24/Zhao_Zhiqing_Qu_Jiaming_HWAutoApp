@@ -4,10 +4,10 @@ This is an application about maserati.
 ## Designer&model
 * designer: Jiaming Qu
 * designed with
-  * Adobe photoshop
-  * aodobe illustrator
-  * xd
-  * cinema 4D
+  * AfterEffects
+  * Illustrator
+  * Adobe XD
+  * Cinema4D
 ## Back-end developer
 * developer: Zhiqing Zhao     
 * build with
@@ -15,3 +15,9 @@ This is an application about maserati.
   * gulp
   * sass
   * javascript
+
+## On going development Roadmap
+* Add 3D tour section to let user interact with the car in real time.
+* Add more interact moduals for car model.
+* Deisgn a more friendly interface for model display.
+* Overhaul the full UX design.

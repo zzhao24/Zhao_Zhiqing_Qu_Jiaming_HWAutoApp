@@ -1,7 +1,7 @@
 <?php
 	require_once ('connect.php');
 
-	if (isset($_GET["title"])) {// check for a parameter ?carModel=R58
+	if (isset($_GET["title"])) {
 		$title = $_GET["title"];
 
 		$myQuery = "SELECT * FROM tbl_features WHERE title = '$title'";
